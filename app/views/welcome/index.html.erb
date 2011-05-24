@@ -2,9 +2,9 @@
   <div data-role="header">
     <%= render 'layouts/page_title' %>
     <% unless current_user %>
-      <%= link_to 'ログイン', '/auth/twitter', { :class => 'ui-btn-right', 'data-icon' => 'gear' } %>
+      <%= link_to t('label.button.login'), '/auth/twitter', { :class => 'ui-btn-right', 'data-icon' => 'gear' } %>
     <% else %>
-      <%= link_to 'ログアウト', signout_path, { :class => 'ui-btn-right', 'data-icon' => 'gear' } %>
+      <%= link_to t('label.button.logout'), signout_path, { :class => 'ui-btn-right', 'data-icon' => 'gear' } %>
     <% end %>
   </div>
   <div data-role="content">
