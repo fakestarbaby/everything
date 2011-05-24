@@ -1,6 +1,11 @@
 <div data-role="page">
   <div data-role="header">
     <%= render 'layouts/page_title' %>
+    <% unless current_user %>
+      <%= link_to 'ログイン', '/auth/twitter', { :class => 'ui-btn-right', 'data-icon' => 'gear' } %>
+    <% else %>
+      <%= link_to 'ログアウト', signout_path, { :class => 'ui-btn-right', 'data-icon' => 'gear' } %>
+    <% end %>
   </div>
   <div data-role="content">
     <p>Find me in app/views/welcome/index.html.erb</p>
