@@ -1,0 +1,15 @@
+defaults: &defaults
+  page:
+    title:
+      welcome:
+        index: everything
+    copyright: @fakestarbaby
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
