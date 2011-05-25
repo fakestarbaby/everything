@@ -1,3 +1,11 @@
+/* Common */
 #copyright {
 	text-align: center;
+}
+
+#navbar {
+	padding: 5px;
+	text-align: right;
+	background: #c0c0c0;
+	font: #000000;
 }

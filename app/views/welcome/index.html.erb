@@ -7,6 +7,15 @@
       <%= link_to t('label.button.logout'), signout_path, { :class => 'ui-btn-right', 'data-icon' => 'gear' } %>
     <% end %>
   </div>
+  <div data-role="navbar">
+    <% unless current_user %>
+    <% else %>
+      <div id="navbar">
+        <span><%= t('label.text.hello', :screen_name => current_user.screen_name) %></span>
+        
+      </div>
+    <% end %>
+  </div>
   <div data-role="content">
     <p>Find me in app/views/welcome/index.html.erb</p>
   </div>

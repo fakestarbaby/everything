@@ -188,6 +188,8 @@ ja:
         format: "%{attribute}%{message}"
 
   label:
+    text:
+      hello: こんにちは、%{screen_name}さん
     button:
       login: "ログイン"
       logout: "ログアウト"
